@@ -1,0 +1,107 @@
+<template>
+    <div class='doc-view' id='root-view'>
+        <header id="fixed-top">认识句子</header>
+        <h1 id='fixed-jzcf'>
+            句子成分
+        </h1>
+        <ul>
+            <li>
+                <span class="important">主语</span>
+                ：句子所陈述的对象。
+            </li>
+            <li>
+                <span class="important">谓语</span>
+                ：主语发出的动作。一般是有动作意义的动词。
+            </li>
+            <li>
+                <span class="important">宾语</span>
+                ：分为动词宾语和介词宾语，属于动作的承受者。
+            </li>
+            <li>
+                <span class="important">系动词</span>
+                ：表示状态或状态变化的动词，没有实际的动作意义。
+            </li>
+            <li>
+                <span class="important">表语</span>
+                ：紧跟系动词后面的成分。
+            </li>
+            <li>
+                <span class="important">定语</span>
+                ：修饰名词或代词的成分。
+            </li>
+            <li>
+                <span class="important">状语</span>
+                ：修饰形容词、副词、动词或句子的成分。
+            </li>
+            <li>
+                <span class="important">补语</span>
+                ：分为宾语补足语和主语补足语。
+            </li>
+        </ul>
+        <h1 id='fixed-jx'>
+            句型
+        </h1>
+        <h3 id='fixed-jx-zxb'>
+            主-系-表
+        </h3>
+        <p class='define'>
+            主语+系动词+主语补足语（表语）
+        </p>
+        <p>
+            系动词无具体作用，仅起连接作用，而表语是用来修饰主语的，说明主语的身份、
+            性质、品性、特征和状态。
+        </p>
+        <p class="eg">
+            I am fine.（翻译：我很好。）
+        </p>
+        <h3 id='fixed-jx-zw'>
+            主-谓
+        </h3>
+        <p class='define'>
+            主语+谓语（+状语）
+        </p>
+        <p>
+            谓语是不及物动词，有时会带一个状语，用于修饰动作（也就是谓语）。
+        </p>
+        <p class="eg">
+            Children giggle.（翻译：孩子们咯咯地笑。）<br />
+            He works hard.（翻译：他工作很勤奋。）
+        </p>
+        <h3 id='fixed-jx-zwb'>
+            主-谓-宾
+        </h3>
+        <p class='define'>
+            主语+谓语+宾语
+        </p>
+        <p>
+            谓语是及物动词，宾语是主语动作的承受对象。
+        </p>
+        <p class="eg">
+            I love china.（翻译：我爱中国。）
+        </p>
+        <h3 id='fixed-jx-zwjbzb'>
+            主-谓-间宾-直宾
+        </h3>
+        <p class='define'>
+            主语+谓语+间宾+直宾
+        </p>
+        <p>
+            间接宾语是接受者（人），直接宾语是承受者（物）。
+        </p>
+        <p class="eg">
+            Mum bought my sister a present.（翻译：妈妈给我妹妹买了一份礼物。）
+        </p>
+        <h3 id='fixed-jx-zwbbb'>
+            主-谓-宾-宾补
+        </h3>
+        <p class='define'>
+            主语+谓语+宾语+宾语补足语
+        </p>
+        <p>
+            必须有“宾语补足语”句意才完整。
+        </p>
+        <p class="eg">
+            Reading makes me happy.（翻译：读书使我快乐。）
+        </p>
+    </div>
+</template>

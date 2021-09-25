@@ -3,7 +3,50 @@
         <div>
             <a href="https://knowpedia.github.io/entry/" target="_blank" class='knowpedia'></a>
             <h2>《英语语法》</h2>
-
+            <ul :active='pagename=="sentence"?"yes":"no"'>
+                <li>
+                    <h3 @click='openPage("sentence","top")'>认识句子</h3>
+                    <ul>
+                        <li>
+                            <h4 @click='doScroll("jzcf")'>
+                                句子成分
+                            </h4>
+                        </li>
+                        <li>
+                            <h4 @click='doScroll("jx")'>
+                                句型
+                            </h4>
+                            <ul>
+                                <li>
+                                    <h5 @click='doScroll("jx-zxb")'>
+                                        主-系-表
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 @click='doScroll("jx-zw")'>
+                                        主-谓
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 @click='doScroll("jx-zwb")'>
+                                        主-谓-宾
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 @click='doScroll("jx-zwjbzb")'>
+                                        主-谓-间宾-直宾
+                                    </h5>
+                                </li>
+                                <li>
+                                    <h5 @click='doScroll("jx-zwbbb")'>
+                                        主-谓-宾-宾补
+                                    </h5>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             <a href="https://github.com/knowpedia/English-Grammar" target="_blank">Fork Me On Github</a>
         </div>
     </div>
@@ -17,7 +60,7 @@
     import fixedScroll from './Service/fixedScroll.js';
 
     let pages = {
-
+        sentence: () => import('./sentence.paper')
     };
 
     export default {
@@ -28,14 +71,14 @@
             };
         },
         mounted() {
-            // let routerString = (window.location.href + "").split('#/')[1];
-            // let pagename = '     ', fixedName = 'top';
-            // if (routerString) {
-            //     let temp = routerString.split('/');
-            //     if (temp[0] in pages) pagename = temp[0];
-            //     fixedName = temp[1] || "top";
-            // }
-            // this.openPage(pagename, fixedName);
+            let routerString = (window.location.href + "").split('#/')[1];
+            let pagename = 'sentence', fixedName = 'top';
+            if (routerString) {
+                let temp = routerString.split('/');
+                if (temp[0] in pages) pagename = temp[0];
+                fixedName = temp[1] || "top";
+            }
+            this.openPage(pagename, fixedName);
         },
         methods: {
             openPage(pagename, fixedName) {
